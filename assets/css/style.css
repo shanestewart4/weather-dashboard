@@ -1,0 +1,82 @@
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: -2rem;
+}
+h2 {
+    text-align: center;
+    font-weight: 600;
+}
+h3, h4, h5 {
+    font-size: 2rem;
+}
+
+p, a {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.jumbotron {
+    background-color: royalblue;
+    color: white;
+    height: 4rem;
+    border: none;
+
+}
+
+.list-group {
+    padding: 0;
+    list-style: none;
+}
+
+.list-item {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: 2px;
+    background-color: black;
+    color: wheat;
+    text-decoration: none;
+}
+/* color scale low-extreme */
+
+.low{
+    border-radius: 4px;
+    background-color: rgb(149, 243, 9);
+    padding: 4px;
+    color: white;
+}
+
+.moderate{
+    border-radius: 4px;
+    background-color: rgb(0, 99, 0);
+    padding: 4px;
+    color: black;
+}
+
+.high{
+    border-radius: 4px;
+    background-color: rgb(226, 147, 0);
+    padding: 4px;
+    color: black;
+}
+
+.very-high{
+    border-radius: 4px;
+    background-color: rgb(148, 2, 2);
+    padding: 4px;
+    color: white;
+}
+
+.extreme{
+    border-radius: 4px;
+    background-color: rgb(71, 10, 66);
+    padding: 4px;
+    color: white;
+}
+
+.search-area{
+    background-color: silver;
+    height: 100vh;
+    padding: 1rem;
+    margin-right: -1rem;
+}

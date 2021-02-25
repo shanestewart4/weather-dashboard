@@ -3,11 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--GoogleFont API-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,300;1,700&display=swap" rel="stylesheet">
+    <!--My CSS, I will use my own CSS if needed!-->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <!--Header-->
+    <header class="bg-dark jumbotron">
+        <!--div for header-->
+        <div>
+            <!--div for H1-->
+            <div>
+                <h1>My Weather Dashboard</h1>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Content Container-->
+    <main class="container-fluid">
+        <!--main row-->
+        <div class="row">
+            <!--search section-->
+            <div class="col-3" id="search-area">
+                <div class="text-center card-body">
+                    <!--search input-->
+                    <div class="card">
+                        <div class="bg-light card-body">
+                            <h3>Look up the forecast for a city/town!</h3>
+                            <div class="mb-3 input-group">
+                                <!--append input div-->
+                                <input type="text" class="form-control" id="search-field" placeholder="Enter a city/town name" aria-label="Recipient Username" aria-describedby="search-button">
+                                <button type="button" id="search-button" class="btn bg-light btn-outline-primary">
+                                    <!--italics-->
+                                    <i class="fa-search fas">Search</i>
+                                </button>
+                            </div>
+                            <ul id="list-group"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--weather display section-->
+            <div class="col-9">
+                <!--appends current day-->
+                <div class="card">
+                    <h3 class="card-title text-center">Today's Forecast:</h3>
+                    <div class="list-group" id="today-display"></div>
+                    <div class="list-group" id="uv-display"></div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <!--append the projected 5-day forecast-->
+        <div class="row">
+            <!--centering using bootstrap grid-->
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="card pl-4 pb-4" id="five-day">
+                    <h3 class="card-title text-center">Your 5-Day Forecast:</h3>
+                    <div class="row" id="forecast-display">
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer text-center mt-auto">
+        <div class="container">
+            <p>Shane Stewart | Homework 6 | Server-Side APIs</p>
+            
+        </div>
+    </footer>
     
-    <script src="./js/script.js"></script>
+    <!--Bootstrap JS Bundle-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!--Moment JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>    
+    
+    <!--My JS-->
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
